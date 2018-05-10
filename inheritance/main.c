@@ -12,11 +12,12 @@ int main()
     if(Manager_Con(&ma, "Bob", 10000.0, 7))
     {
         float salary;
-        salary = Manager_GetSalary(&ma);
+        salary = OOC_Employee_GetSalary(&ma);
         printf("Inheritance test: Salary--%f\n", salary);
-        Manager_Print(&ma);
+        OOC_Manager_Print(&ma);
+        OOC_Employee_Print(&ma);
     }
-    Manager_Des(&ma);
+    OOC_Manager_Des(&ma);
 
     return 0;
 }

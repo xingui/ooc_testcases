@@ -21,11 +21,6 @@ void Employee_Print(PEmployee self)
     printf("Name: %s, Salary: %f", self->__szName, self->__salary);
 }
 
-float Employee_GetSalary(PEmployee self)
-{
-    return self->__salary;
-}
-
 EM_Stat Employee_Des(PEmployee self)
 {
     free((void *)self->__szName);

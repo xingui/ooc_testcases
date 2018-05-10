@@ -11,10 +11,10 @@ int main()
     if(Employee_Con(&em, "Bob", 10000.0))
     {
         float salary;
-        salary = Employee_GetSalary(&em);
-        Employee_Print(&em);
+        salary = OOC_Employee_GetSalary(&em);
+        OOC_Employee_Print(&em);
     }
-    Employee_Des(&em);
+    OOC_Employee_Des(&em);
 
     return 0;
 }

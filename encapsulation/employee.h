@@ -11,7 +11,10 @@ typedef Employee* PEmployee;
 
 EM_Stat Employee_Con(PEmployee self, const char *szName, float salary);
 void Employee_Print(PEmployee self);
-float Employee_GetSalary(PEmployee self);
 EM_Stat Employee_Des(PEmployee self);
 
+#define OOC_Employee_Print(self) Employee_Print(self)
+#define OOC_Employee_GetSalary(self) (((PEmployee)(self))->__salary)
+#define OOC_Employee_GetName(self) (((PEmployee)(self))->__szName)
+#define OOC_Employee_Des(self) Employee_Des(self)
 #endif

@@ -23,9 +23,3 @@ void Manager_Print(PManager self)
     printf(", Level: %d", self->__level);
 }
 
-EM_Stat Manager_Des(PManager self)
-{
-    Employee_Des(&self->super);
-    return EM_OK;
-}
-
